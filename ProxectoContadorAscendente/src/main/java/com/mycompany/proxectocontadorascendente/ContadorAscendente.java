@@ -23,7 +23,7 @@ public class ContadorAscendente {
         }else{
             this.valorActual=1000;
         }
-        retutn this.valorActual;
+        return this.valorActual;
     }
     
     public void reiniciar(){

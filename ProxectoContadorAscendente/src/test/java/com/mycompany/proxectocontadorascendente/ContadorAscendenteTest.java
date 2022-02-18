@@ -51,28 +51,6 @@ public class ContadorAscendenteTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of getValorActual method, of class ContadorAscendente.
-     */
-    @Test
-    public void testGetValorActual() {
-        System.out.println("getValorActual");
-        ContadorAscendente instance = null;
-        int expResult = 0;
-        int result = instance.getValorActual();
-        assertEquals(expResult, result);
-    }
-
-    /**
-     * Test of setValorActual method, of class ContadorAscendente.
-     */
-    @Test
-    public void testSetValorActual() {
-        System.out.println("setValorActual");
-        int valorActual = 0;
-        ContadorAscendente instance = null;
-        instance.setValorActual(valorActual);
-    }
 
     /**
      * Test of toString method, of class ContadorAscendente.
