@@ -18,7 +18,7 @@ public class ContadorAscendente {
     }
 
     public int incrementar(){
-        if (this.valorActual>1000){
+        if (this.valorActual<1000){
             this.valorActual++;
         }else{
             this.valorActual=1000;

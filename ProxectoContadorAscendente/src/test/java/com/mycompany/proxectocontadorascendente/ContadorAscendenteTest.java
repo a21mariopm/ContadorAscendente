@@ -22,8 +22,8 @@ public class ContadorAscendenteTest {
     @Test
     public void testIncrementar() {
         System.out.println("incrementar");
-        ContadorAscendente instance = null;
-        int expResult = 0;
+        ContadorAscendente instance = new ContadorAscendente(900);
+        int expResult = 901;
         int result = instance.incrementar();
         assertEquals(expResult, result);
     }
@@ -34,7 +34,7 @@ public class ContadorAscendenteTest {
     @Test
     public void testReiniciar() {
         System.out.println("reiniciar");
-        ContadorAscendente instance = null;
+        ContadorAscendente instance = new ContadorAscendente(900);
         instance.reiniciar();
     }
 
@@ -44,9 +44,9 @@ public class ContadorAscendenteTest {
     @Test
     public void testCambiarValor() {
         System.out.println("cambiarValor");
-        int modificador = 0;
-        ContadorAscendente instance = null;
-        int expResult = 0;
+        int modificador = 2;
+        ContadorAscendente instance = new ContadorAscendente(1);
+        int expResult = 3;
         int result = instance.cambiarValor(modificador);
         assertEquals(expResult, result);
     }
@@ -58,8 +58,8 @@ public class ContadorAscendenteTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        ContadorAscendente instance = null;
-        String expResult = "";
+        ContadorAscendente instance = new ContadorAscendente(900);
+        String expResult = "ContadorAscendente{" + "valorActual=" + 900 + '}';
         String result = instance.toString();
         assertEquals(expResult, result);
     }
