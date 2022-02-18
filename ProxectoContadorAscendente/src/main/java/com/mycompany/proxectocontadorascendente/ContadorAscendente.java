@@ -17,7 +17,26 @@ public class ContadorAscendente {
         this.valorActual = valorActual;
     }
 
-    private
+    public int incrementar(){
+        if (this.valorActual>1000){
+            this.valorActual++;
+        }else{
+            this.valorActual=1000;
+        }
+        retutn this.valorActual;
+    }
+    
+    public void reiniciar(){
+        this.valorActual=0;
+    }
+    
+    public int cambiarValor(int modificador){
+        int suma=this.valorActual+modificador;
+        if (suma<1000){
+            this.valorActual=suma;
+        }
+        return this.valorActual;
+    }
     
     /**
      * Get the value of valorActual
@@ -42,5 +61,4 @@ public class ContadorAscendente {
         return "ContadorAscendente{" + "valorActual=" + valorActual + '}';
     }
   
-  }
 }
