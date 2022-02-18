@@ -51,7 +51,6 @@ public class ContadorAscendenteTest {
         assertEquals(expResult, result);
     }
 
-
     /**
      * Test of toString method, of class ContadorAscendente.
      */

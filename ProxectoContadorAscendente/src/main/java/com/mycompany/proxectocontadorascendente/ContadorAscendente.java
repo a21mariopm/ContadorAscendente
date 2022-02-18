@@ -60,5 +60,5 @@ public class ContadorAscendente {
     public String toString() {
         return "ContadorAscendente{" + "valorActual=" + valorActual + '}';
     }
-  
+    
 }
