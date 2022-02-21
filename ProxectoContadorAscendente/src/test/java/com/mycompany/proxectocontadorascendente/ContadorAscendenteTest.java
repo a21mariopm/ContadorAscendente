@@ -22,19 +22,19 @@ public class ContadorAscendenteTest {
     @Test
     public void testIncrementar() {
         System.out.println("incrementar");
-        ContadorAscendente instance = new ContadorAscendente(900);
-        int expResult = 901;
+        ContadorAscendente instance = new ContadorAscendente(1);
+        int expResult = 2;
         int result = instance.incrementar();
         assertEquals(expResult, result);
     }
-
+      
     /**
      * Test of reiniciar method, of class ContadorAscendente.
      */
     @Test
     public void testReiniciar() {
         System.out.println("reiniciar");
-        ContadorAscendente instance = new ContadorAscendente(900);
+        ContadorAscendente instance = new ContadorAscendente(1);
         instance.reiniciar();
     }
 
@@ -57,9 +57,20 @@ public class ContadorAscendenteTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        ContadorAscendente instance = new ContadorAscendente(900);
-        String expResult = "ContadorAscendente{" + "valorActual=" + 900 + '}';
+        ContadorAscendente instance = new ContadorAscendente(1);
+        String expResult = "ContadorAscendente{" + "valorActual=" + 1 + '}';
         String result = instance.toString();
+        assertEquals(expResult, result);
+    }
+
+
+  
+@Test
+    public void testIncrementar1000() {
+        System.out.println("incrementar valor 1000");
+        ContadorAscendente instance = new ContadorAscendente(1000);
+        int expResult = 1000;
+        int result = instance.incrementar();
         assertEquals(expResult, result);
     }
     
