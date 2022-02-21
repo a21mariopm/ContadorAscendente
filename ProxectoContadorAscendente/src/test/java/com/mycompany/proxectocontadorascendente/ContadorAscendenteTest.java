@@ -34,7 +34,7 @@ public class ContadorAscendenteTest {
     @Test
     public void testReiniciar() {
         System.out.println("reiniciar");
-        ContadorAscendente instance = new ContadorAscendente(1);
+        ContadorAscendente instance = new ContadorAscendente(0);
         instance.reiniciar();
     }
 
