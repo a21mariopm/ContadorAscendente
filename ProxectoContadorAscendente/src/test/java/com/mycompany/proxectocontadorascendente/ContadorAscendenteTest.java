@@ -74,4 +74,30 @@ public class ContadorAscendenteTest {
         assertEquals(expResult, result);
     }
     
+@Test
+    public void testIncrementar900() {
+        System.out.println("incrementar valor 900");
+        ContadorAscendente instance = new ContadorAscendente(900);
+        int expResult = 901;
+        int result = instance.incrementar();
+        assertEquals(expResult, result);
+    }   
+    
+ @Test
+    public void testIncrementar0() {
+        System.out.println("incrementar valor 0");
+        ContadorAscendente instance = new ContadorAscendente(0);
+        int expResult = 1;
+        int result = instance.incrementar();
+        assertEquals(expResult, result);
+    }   
+@Test
+    public void testIncrementarmenos100() {
+        System.out.println("incrementar valor -100");
+        ContadorAscendente instance = new ContadorAscendente(-100);
+        int expResult = -99;
+        int result = instance.incrementar();
+        assertEquals(expResult, result);
+    }     
+
 }
