@@ -19,7 +19,7 @@ public class ContadorAscendenteTest {
     /**
      * Test of incrementar method, of class ContadorAscendente.
      */
-    @Test
+@Test
     public void testIncrementar() {
         System.out.println("incrementar");
         ContadorAscendente instance = new ContadorAscendente(1);
@@ -31,7 +31,7 @@ public class ContadorAscendenteTest {
     /**
      * Test of reiniciar method, of class ContadorAscendente.
      */
-    @Test
+@Test
     public void testReiniciar() {
         System.out.println("reiniciar");
         ContadorAscendente instance = new ContadorAscendente(0);
@@ -41,7 +41,7 @@ public class ContadorAscendenteTest {
     /**
      * Test of cambiarValor method, of class ContadorAscendente.
      */
-    @Test
+@Test
     public void testCambiarValor() {
         System.out.println("cambiarValor");
         int modificador = 2;
@@ -54,7 +54,7 @@ public class ContadorAscendenteTest {
     /**
      * Test of toString method, of class ContadorAscendente.
      */
-    @Test
+@Test
     public void testToString() {
         System.out.println("toString");
         ContadorAscendente instance = new ContadorAscendente(1);
@@ -107,9 +107,16 @@ public class ContadorAscendenteTest {
         int expResult = -99;
         int result = instance.incrementar();
         assertEquals(expResult, result);
+    }      
+@Test
+    public void testIncrementar1001() {
+        System.out.println("incrementar valor 1001");
+        ContadorAscendente instance = new ContadorAscendente(1001);
+        int expResult = 1000;
+        int result = instance.incrementar();
+        assertEquals(expResult, result);
     }     
-
-    @Test
+@Test
     public void testIncrementar1100() {
         System.out.println("incrementar valor 1100");
         ContadorAscendente instance = new ContadorAscendente(1100);
