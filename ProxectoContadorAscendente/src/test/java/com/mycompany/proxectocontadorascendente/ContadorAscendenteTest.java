@@ -66,28 +66,28 @@ public class ContadorAscendenteTest {
 
   
 @Test
-    public void testIncrementar1000() {
-        System.out.println("incrementar valor 1000");
-        ContadorAscendente instance = new ContadorAscendente(1000);
-        int expResult = 1000;
+    public void testIncrementar900() {
+        System.out.println("incrementar valor 900");
+        ContadorAscendente instance = new ContadorAscendente(900);
+        int expResult = 901;
         int result = instance.incrementar();
         assertEquals(expResult, result);
     }
 
 @Test
-    public void testIncrementar999() {
-        System.out.println("incrementar valor 999");
-        ContadorAscendente instance = new ContadorAscendente(999);
+    public void testIncrementar1100() {
+        System.out.println("incrementar valor 1100");
+        ContadorAscendente instance = new ContadorAscendente(1100);
         int expResult = 1000;
         int result = instance.incrementar();
         assertEquals(expResult, result);
     }
     
 @Test
-    public void testIncrementar900() {
-        System.out.println("incrementar valor 900");
-        ContadorAscendente instance = new ContadorAscendente(900);
-        int expResult = 901;
+    public void testIncrementar999() {
+        System.out.println("incrementar valor 999");
+        ContadorAscendente instance = new ContadorAscendente(999);
+        int expResult = 1000;
         int result = instance.incrementar();
         assertEquals(expResult, result);
     }   
@@ -109,6 +109,14 @@ public class ContadorAscendenteTest {
         assertEquals(expResult, result);
     }      
 @Test
+    public void testIncrementar1000() {
+        System.out.println("incrementar valor 1000");
+        ContadorAscendente instance = new ContadorAscendente(1000);
+        int expResult = 1000;
+        int result = instance.incrementar();
+        assertEquals(expResult, result);
+    }     
+    @Test
     public void testIncrementar99() {
         System.out.println("incrementar valor 99");
         ContadorAscendente instance = new ContadorAscendente(99);
@@ -116,19 +124,11 @@ public class ContadorAscendenteTest {
         int result = instance.incrementar();
         assertEquals(expResult, result);
     }     
-    @Test
-    public void testIncrementar500() {
-        System.out.println("incrementar valor 99");
-        ContadorAscendente instance = new ContadorAscendente(500);
-        int expResult = 501;
-        int result = instance.incrementar();
-        assertEquals(expResult, result);
-    }     
     
 @Test
-    public void testIncrementar1100() {
-        System.out.println("incrementar valor 1100");
-        ContadorAscendente instance = new ContadorAscendente(1100);
+    public void testIncrementar1001() {
+        System.out.println("incrementar valor 1001");
+        ContadorAscendente instance = new ContadorAscendente(1001);
         int expResult = 1000;
         int result = instance.incrementar();
         assertEquals(expResult, result);
